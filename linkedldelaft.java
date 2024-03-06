@@ -48,6 +48,9 @@ public class linkedldelaft {
                 System.out.println("element found at last position deletion not possible");
             else
                temp.next = temp.next.next;
+               if(temp.next==null){
+                tail = temp;
+               }
         }
     }
     public static void main(String args[]){
